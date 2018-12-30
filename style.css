@@ -1,0 +1,675 @@
+body
+{
+	margin: 0 !important;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #fff;
+	background-color: #29292a;
+	border: 4px solid #000;
+}
+
+
+.clear
+{
+	clear: both;
+}
+
+.division
+{
+	height: 5px;
+	background-color: #FFC300;
+	margin: 0;
+}
+
+.float-left
+{
+	float: left;
+	display: block;
+	margin: 10px 25px 0 25px;
+}
+
+/*HOMEPAGE*/
+
+
+/*START Header section*/
+
+#main-container
+{
+
+}
+
+
+
+#main-header
+{
+	width: auto;
+	height: auto;
+	background-image: url('img/main-background.jpg');
+	background-size: contain;
+}
+
+#main-logo
+{
+	width: 450px;
+	height: 80px;
+	float: left;
+	margin: 80px 40px;
+	font-size: 26px;
+	font-weight: 700;
+	text-align: center;
+}
+
+#main-logo h1
+{
+	margin: 10px 10px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#login
+{
+	width: 400px;
+	float: right;
+	margin: 0 155px;
+	padding-bottom: 10px;
+	background-color: #054761;
+	border-right: 2px solid #FFC300;
+	border-bottom: 2px solid #FFC300;
+	border-left: 2px solid #FFC300;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+#form-login
+{
+	margin: 5px 10px;
+}
+
+#form-login > label > p
+{
+	vertical-align: baseline;
+	margin: 0;
+	font-size: 11px;
+	float: left;
+}
+
+#form-login > label > p > a
+{
+	text-decoration-color: #FFC300;
+	color: #FFC300;
+}
+
+/*Początek stylizacji formularza logowania*/
+
+input[name=email_login],
+input[name=password_login]
+{
+	width: 125px;
+	height: 20px;
+	margin: 5px 5px 10px 5px;
+	background-color: #fff;
+	border-top: none;
+	border-right: none;
+	border-bottom: 4px solid #FFC300;
+	border-left: none;
+	font-size: 14px;
+	outline: none;
+	-webkit-box-shadow: inset 0px 0px 12px -6px rgba(0,0,0,0.83);
+	-moz-box-shadow: inset 0px 0px 12px -6px rgba(0,0,0,0.83);
+	box-shadow: inset 0px 0px 12px -6px rgba(0,0,0,0.83);
+}
+
+input[name=email_login]:focus,
+input[name=password_login]:focus
+{
+	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.83);
+	-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.83);
+	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.83);
+}
+
+input[name=submit_login]
+{
+	width: 90px;
+	height: 30px;
+	background-color: #FFC300;
+	color: #9c7803;
+	font-size: 12px;
+	font-weight: 700;
+	border: 1px solid #9c7803;
+	border-radius: 6px;
+	cursor: pointer;
+	vertical-align: middle;
+	outline: none;
+}
+
+input[name=submit_login]:hover
+{
+	background-color: #ffcb20;
+}
+
+input[name=checkbox_login]
+{
+	vertical-align: -2px;
+}
+
+.error-login
+{
+	font-size: 12px;
+	color: #FFC300;
+	margin: 10px 0 0 5px;
+	padding: 5px 0 0 10px;
+	float: left;
+}
+
+/*Koniec stylizacji formularza logowania*/
+
+#register
+{
+	width: 550px;
+	float: right;
+	margin: 30px 80px 30px 80px;
+	padding-bottom: 20px;
+	background-color: #054761;
+	border: 2px solid #FFC300;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.52);
+	-moz-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.52);
+	box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.52);
+}
+
+#register h2
+{
+	margin: 15px 100px 10px 100px;
+	font-size: 36px;
+	text-align: center;
+	color: #FFC300;
+}
+
+#form-register
+{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#form-register h4
+{
+	margin: 5px 0 8px 0;
+	font-size: 14px;
+}
+
+#form-register > label > p
+{
+	font-size: 11px;
+	text-align: center;
+}
+
+
+#form-register > label > p > a
+{
+	text-decoration-color: #FFC300;
+	color: #FFC300;
+}
+
+.g-recaptcha
+{
+	margin: 20px 130px;
+}
+
+input[name=checkbox_register]
+{
+	vertical-align: -2px;
+}
+
+/*Początek stylizacji formularza rejestracji*/
+
+input[name=characters_name_register],
+input[name=characters_surname_register],
+input[name=email_register],
+input[name=password_register1],
+input[name=password_register2]
+{
+	width: 220px;
+	height: 40px;
+	background-color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	-webkit-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.83);
+	-moz-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.83);
+	box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.83);
+}
+
+input[name=characters_name_register]:focus,
+input[name=characters_surname_register]:focus,
+input[name=email_register]:focus,
+input[name=password_register1]:focus,
+input[name=password_register2]:focus
+{
+	border: 4px solid #FFC300;
+	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.83);
+	-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.83);
+	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.83);
+}
+
+input[name=submit_register]
+{
+	width: 180px;
+	height: 50px;
+	background-color: #FFC300;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 10px;
+	border: 1px solid #FFC300;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	-webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.83);
+	-moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.83);
+	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.83);
+}
+
+input[name=submit_register]:hover
+{
+	background-color: #ffcb20;
+}
+
+.error-register
+{
+	font-size: 12px;
+	color: #FFC300;
+	margin: 0;
+}
+
+/*Koniec stylizacji formularza rejestracji*/
+
+/*END Header Section
+
+START Article section*/
+
+#main-article
+{
+	width: auto;
+	height: 460px;
+	margin-top: 0;
+	background-image: url('img/main-news-background.jpg');
+	background-size: contain;
+}
+
+#main-slider
+{
+	width: 550px;
+	height: 300px;
+	margin: 80px 20px 80px 100px;
+	float: left;
+	background-image: url('img/s0.jpg');
+	background-size: contain;
+}
+
+#main-section
+{
+	width: 550px;
+	height: 300px;
+	margin: 80px 100px 80px 20px;
+	padding: 0 20px 10px 20px;
+	float: right;
+	background-color: #054761;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+#main-section h2
+{
+	font-size: 32px;
+	margin-bottom: 0;
+	color: #FFC300;
+}
+
+.news-info
+{
+	margin: 0 0 5px 0;
+	font-size: 12px;
+}
+
+#main-section .division
+{
+	height: 2px;
+}
+
+/*Footer section*/
+
+#main-footer
+{
+	width: auto;
+	height: auto;
+	margin-top: 0;
+}
+
+#main-footer .division
+{
+	width: 600px;
+	height: 2px;
+	margin: 0 auto;
+}
+
+#main-socials
+{
+	width: 600px;
+	height: 100px;
+	margin: 30px auto 10px auto;
+}
+
+#main-socials a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Social logotypes*/
+
+#main-facebook
+{
+	width: 80px;
+	height: 80px;
+	margin: 20px 30px 0 30px;
+	float: left;
+}
+
+#main-facebook a:hover
+{
+	color: #6d84b4;
+}
+
+#main-youtube
+{
+	width: 80px;
+	height: 80px;
+	margin: 20px 30px 0 30px;
+	float: left;
+}
+
+#main-youtube a:hover
+{
+	color: #FF0000;
+}
+
+#main-instagram
+{
+	width: 80px;
+	height: 80px;
+	margin: 20px 30px 0 30px;
+	float: left;
+}
+
+#main-instagram a:hover
+{
+	color: #ffc838;
+}
+
+#main-gplus
+{
+	width: 80px;
+	height: 80px;
+	margin: 20px 30px 0 30px;
+	float: left;
+}
+
+#main-gplus a:hover
+{
+	color: #d34836;
+}
+
+/*End of social logotypes*/
+
+#main-footer-logo
+{
+	width: 450px;
+	height: 80px;
+	float: left;
+	margin: 0 450px 40px 450px;
+	font-size: 26px;
+	font-weight: 700;
+	text-align: center;
+}
+
+#main-copyrights
+{
+	width: auto;
+	height: auto;
+}
+
+#main-copyrights a
+{
+	text-decoration: none;
+	color: #FFC300;
+}
+
+#main-copyrights p
+{
+	text-align: center;
+}
+
+
+/*INGAME*/
+
+#ingame-cointainer
+{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+}
+
+/*Start of header*/
+
+#ingame-header
+{
+	width: auto;
+	height: 100px;
+	margin: 0;
+	padding: 0 60px;
+		border: 1px solid #fff;
+}
+
+#ingame-datatime
+{
+	width: 1225px;
+	height: 60px;
+	margin: 0;
+		border: 1px solid #fff;
+}
+
+#ingame-logo
+{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	margin: 0;
+	float: left;
+		border: 1px solid #fff;
+}
+
+#ingame-logo h1
+{
+	margin: auto;
+}
+
+#ingame-logo a
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: 32px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/*Nav*/
+
+#ingame-nav
+{
+	width: 925px;
+	height: 50px;
+	float: left;
+	margin: 0;
+	background-color: #054761;
+	border-top: 1px solid #FFC300;
+	border-bottom: 1px solid #FFC300;
+	border-radius: 8px;
+}
+
+#ingame-nav ol
+{	
+	clear: left;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	text-align: center;
+}
+
+#ingame-nav ol li
+{
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: 50%;
+}
+
+#ingame-nav ol li a
+{
+	display: block;
+	color: #fff;
+	padding: 0 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+#ingame-nav ol li a.active, 
+#ingame-nav ol li a:hover
+{
+	background: #FFC300;
+}
+
+/*End of header
+
+Start of main content*/
+
+#ingame-main-content
+{
+	height: 100%;
+	padding: 20px 60px;
+
+}
+
+#ingame-player-panel
+{
+	width: 300px;
+	height: auto;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	background-color: #135873;
+	border-top: 12px solid #054761;
+	border-radius: 8px;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.63);
+	-moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.63);
+	box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.63);
+
+}
+
+#player-name
+{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+}
+
+#player-name p
+{
+	color: #FFC300;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+}
+
+#player-panel-avatar
+{
+	width: 110px;
+	height: 120px;
+	float: left;
+	border: 3px solid #FFC300;
+	border-radius: 5px;
+}
+
+#player-panel-info
+{
+	width: 164px;
+	height: 106px;
+	margin: 10px 0;
+	padding: 5px;
+	float: left;
+	text-align: left;
+	box-sizing: border-box;
+	background-color: #9197ae;
+	/*border-top: 4px dashed #135873;
+	border-bottom: 4px dashed #135873;*/
+}
+
+input[name=logout]
+{
+	width: 70px;
+	height: 20px;
+	background-color: #FFC300;
+	color: #9c7803;
+	font-size: 10px;
+	font-weight: 700;
+	border: 1px solid #9c7803;
+	border-radius: 6px;
+	cursor: pointer;
+	margin: 5px 25px;
+	padding: 0 5px;
+	vertical-align: middle;
+	outline: none;
+}
+
+input[name=logout]:hover
+{
+	background-color: #ffcb20;
+}
+
+#logout a
+{
+	text-decoration: none;
+}
+
+#ingame-country-news
+{
+
+}
+
+#ingame-world-news
+{
+
+}
+
+#ingame-short-birdie
+{
+
+}
+
+
